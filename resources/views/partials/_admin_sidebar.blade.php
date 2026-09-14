@@ -26,6 +26,10 @@
             <span class="sidebar-icon"><i class="fa-solid fa-key"></i></span>
             <span class="sidebar-label">Privileges</span>
         </a>
+        <a href="{{ route('admin.products.index') }}" class="sidebar-link {{ request()->routeIs('admin.products.*') ? 'active' : '' }}">
+            <span class="sidebar-icon"><i class="fa-solid fa-box"></i></span>
+            <span class="sidebar-label">Products</span>
+        </a>
     </nav>
 
     <div class="sidebar-footer">
